@@ -1,0 +1,88 @@
+---
+title: "Code book"
+author: "Johib Bhuiyan"
+date: "February 11, 2016"
+output: html_document
+---
+
+This is the codebook describing the variables in the dfinal and subjectaverage dataframes.
+
+ID VARIABLES:
+
+subject(factor): A factor variable ranging from 1-30 indicating the subject whom the test was conducted upon.
+
+activity(factor): A variable consisting of levels walking, walking upstairs, walking downstairs, sitting, standing and laying. Indicates the activity of the subject.
+
+MEASURED VARIABLES:
+The following variables are found in the columns of the dataframe. Some of the variables have a specific direction, hence to save time and space, the [x-z] suffix indicates that there are 3 variables consiting of the x,y and z direction. Following the name of the variable we have the (class) and (units) indicated in parenthesis. Finally after the : we have a discription of the variable itself. NOTE: The columns in subjectaverage data table, although have the same names, are simply the averages of following variables with respect to the subject and activity . 
+
+tbodyaccmean[x-z](numeric)(ms^-2): Mean of the time domain body acceleration signals with respect to x,y,z direction.
+
+tbodyaccstd[x-z](numeric)(ms^-2): Standard deviation of the time domain body acceleration signals with respect to x,y,z direction.  
+
+tgravityaccmean[x-z](numeric)(ms^-2): Mean of the time domain gravitational acceleration signals with respect to the x,y and z direction. 
+
+tgravityaccstd[x-z](numeric)(ms^-2): Standard deviation of the time domain gravitational acceleration signals with respect to the x,y and z direction. 
+
+tbodyaccjerkmean[x-z](numeric)(ms^-3): Mean of the time derivative of the time domain body acceleration with respect to the x,y and z direction. 
+
+tbodyaccjerkstd[x-z](numeric)(ms^-3): Standard deviation of the time derivative of the time domain body acceleration with respect to the x,y and z direction. 
+
+tbodygyromean[x-z](numeric)(rads^-1): Mean of the time domain body angular velocity with respect to the x,y and z direction.  
+
+tbodygyrostd[x-z](numeric)(rads^-1): Standard deviation of the time domain body angular velocity with respect to the x,y and z direction.   
+
+tbodygyrojerkmean[x-z](numeric)(rads^-2): Mean of the time derivative of the time domain body angular velocity with respect to the x,y and z direction.  
+
+tbodygyrojerkstd[x-z](numeric)(rads^-2): Standard deviation of the time derivative of the time domain body angular velocity with respect to the x,y and z direction. 
+
+tbodyaccmagmean(numeric)(ms^-2)): Mean of the Euclidean norm of the x,y,z time domain body acceleration vector. 
+
+tbodyaccmagstd(numeric)(ms^-2)): Standard deviation of the Euclidean norm of the x,y,z time domain body acceleration vector. 
+
+tgravityaccmagmean(numeric)(ms^-2)): Mean of the Euclidean norm of the x,y,z time domain gravitational acceleration vector. 
+
+
+tgravityaccmagstd(numeric)(ms^-2)): Standard deviation of the Euclidean norm of the x,y,z time domain gravitational acceleration vector.
+
+tbodyaccjerkmagmean(numeric)(ms^-3)): Mean of the Euclidean norm of the x,y,z time derivative of the time domain body acceleration vector.
+
+tbodyaccjerkmagstd(numeric)(ms^-3)): Standard deviation of the Euclidean norm of the x,y,z time derivative of the time domain body acceleration vector.
+
+tbodygyromagmean(numeric)(rads^-1): Mean of the Euclidian norm of the x,y,z time domain body angular velocity vector.
+
+tbodygyromagstd(numeric)(rads^-1): Standard deviation of the Euclidian norm of the x,y,z time domain body angular velocity vector.
+
+tbodygyrojerkmagmean(numeric)(rads^-2): Mean of the Euclidian norm of the x,y,z time derivative of the time domain body angular velocity vector.
+
+tbodygyrojerkmagstd(numeric)(rads^-2): Standard deviation of the Euclidian norm of the x,y,z time derivative of the time domain body angular velocity vector.
+
+fbodyaccmean[x-z](numeric)(ms^-2): Mean of the Fast Furior Transform of the time domain body acceleration signals with respect to x,y,z direction.
+
+fbodyaccstd[x-z](numeric)(ms^-2): Standard deviation of the Fast Furior Transform of the time domain body acceleration signals with respect to x,y,z direction. 
+
+fbodyaccjerkmean[x-z](numeric)(ms^-3): Mean of the Fast Furior transform of the time derivative of the time domain body acceleration with respect to the x,y and z direction.
+
+fbodyaccjerkstd[x-z](numeric)(ms^-2): Standard deviation of the Fast Furior transform of the time derivative of the time domain body acceleration with respect to the x,y and z direction. 
+
+fbodygyromean[x-z](numeric)(rads^-1): Mean of the Fast Furior transform of the time domain body angular velocity with respect to the x,y and z direction.   
+
+fbodygyrostd[x-z](numeric)(rads^-1): Standard deviation of the Fast Furior transform of the time domain body angular velocity with respect to the x,y and z direction. 
+
+fbodyaccmagmean(numeric)(ms^-2): Mean of the Fast Furior transform of the Euclidean norm of the x,y,z time domain body acceleration vector. 
+
+fbodyaccmagstd(numeric)(ms^-2): Standard deviation of the Fast Furior transform of the Euclidean norm of the x,y,z time domain body acceleration vector. 
+
+fbodyaccjerkmagmean(numeric)(ms^-3):  Mean of the Fast Furior transform of the Euclidean norm of the time derviative of the x,y,z time domain body acceleration vector.
+
+fbodyaccjerkmagstd(numeric)(ms^-3): Standard deviation of the Fast Furior transform of the Euclidean norm of the time derviative of the x,y,z time domain body acceleration vector.
+
+fbodygyromagmean(numeric)(rads^-1): Mean of the Fast Furior transform of the Euclidian norm of the x,y,z time domain body angular velocity vector.
+
+fbodygyromagstd(numeric)(rads^-1): Standard deviation of the Fast Furior transform of the Euclidian norm of the x,y,z time domain body angular velocity vector.
+
+fbodyjerkmagmean(numeric)(rads^-2): Mean of the Fast Furior transform of the Euclidian norm of the time derivative of the x,y,z time domain body angular velocity vector.
+
+fbodyjerkmagstd(numeric)(rads^-2): Standard deviation of the Fast Furior transform of the Euclidian norm of the time derivative of the x,y,z time domain body angular velocity vector.
+
+  

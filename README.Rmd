@@ -1,0 +1,29 @@
+---
+title: "README"
+author: "Johib Bhuiyan"
+date: "February 10, 2016"
+output: html_document
+---
+
+How run_analysis.R works?
+
+The code produces 2 data frames dfinal and subjectaverage. dfinal is the final merged dataframe of the training and test set. subjectaverage is the average of the variables for each subject and the activity performed.
+
+1. Read x test, y test,subject test, features and activity labels text files into R as data tables.
+2. Coerce features into a character vector, remove all (),- and make lower case letters.
+3. Change the col names of the x test data table to the features vector.
+4. Subset the x test data table by the col names which contain meanx,meany and meanz or stdx,stdy, and stdz.
+5. Coerce the Y test label vector in a factor and activity labels vector into a character.
+6. Change the levels of Y into the activity labels vector.
+7. Column bind the subject, y test and x test data tables togethor.
+8. Rename the subject and y test columns in the new data frame.
+9. Repeat steps 1-8 for the training data.
+10. Sort by subject and Rowbind the test and training data frames formed in step 7 to produce dfinal
+11. melt dfinal using measurements as variables and subject and activity as ids
+12. dcast the melted dataframe with formula subject+activity~variable applying mean over the variables to produce the dataframe subjectaverage.
+
+Thanks for Reading.
+
+
+
+
